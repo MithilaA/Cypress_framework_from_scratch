@@ -11,4 +11,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with: 
-        command: npm run test:add_to_cart
+          command: npm run test:add_to_cart
+
+        

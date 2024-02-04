@@ -4,11 +4,13 @@
   "description": "This is a new repository for cypress framwork tutorial",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:add_to_cart": "npx cypress run --spec cypress/e2e/Tests/homePage.cy.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.4"
+    "cypress": "^13.6.4",
+    "cypress-mochawesome-reporter": "^3.8.1"
   }
 }

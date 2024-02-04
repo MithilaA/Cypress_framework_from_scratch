@@ -14,7 +14,7 @@ jobs:
           command: npm run test:add_to_cart
       - name: Cypress Test Report
         if: always()
-        uses: actions/upload-artifact@v3 
+        uses: actions/checkout@v4
         with:
           name: Mochawesome_HTML_Report-add_to_cart
           path: cypress/reports/html

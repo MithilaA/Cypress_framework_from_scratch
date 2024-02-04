@@ -9,10 +9,9 @@ jobs:
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v6
-      
+        uses: cypress-io/github-action@v6     
       - name: Cypress report upload
-      - uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: Mochawesome Report
           path: cypress/reports/html

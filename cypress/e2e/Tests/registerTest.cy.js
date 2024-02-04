@@ -16,7 +16,7 @@ describe(' test automation', () => {
         registerObj.selectCheckbox()
         registerObj.clickOnContinue()
 
-
+//comment
 
     })
 })

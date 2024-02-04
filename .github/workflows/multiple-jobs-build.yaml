@@ -12,6 +12,9 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:add_to_cart
+ 
+ 
+ 
   register-run:
     runs-on: ubuntu-22.04
     steps:

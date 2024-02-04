@@ -1,4 +1,4 @@
-name: End-to-end tests
+name: Parallel exection End-to-end tests
 on: push
 jobs:
   add_to_cart-run:
@@ -12,6 +12,12 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:add_to_cart
+      - name: Cypress Test Report
+        if: always()
+        uses: actions/upload-artifact@v3 
+        with:
+          name: Mochawesome HTML Report - add to cart
+          path: cypress/reports/html
  
  
  
@@ -26,6 +32,10 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run test:register_user
-  
-
+      - name: Cypress Test Report
+        if: always()
+        uses: actions/upload-artifact@v3 
+        with:
+          name: Mochawesome HTML Report - Register
+          path: cypress/reports/html
         

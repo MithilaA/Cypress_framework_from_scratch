@@ -16,7 +16,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v3 
         with:
-          name: Mochawesome HTML Report - add to cart
+          name: Mochawesome_HTML_Report-add_to_cart
           path: cypress/reports/html
  
  
@@ -36,6 +36,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v3 
         with:
-          name: Mochawesome HTML Report - Register
+          name: Mochawesome_HTML_Report-Register
           path: cypress/reports/html
         
